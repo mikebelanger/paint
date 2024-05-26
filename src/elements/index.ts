@@ -29,3 +29,4 @@ import './tool-draw-opaque';
 import './tool-eraser-size';
 import './tool-fill-style';
 import './tool-line-width';
+import './paint-layer';

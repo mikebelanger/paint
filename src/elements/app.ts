@@ -216,7 +216,6 @@ export class App extends LitElement {
   render(): TemplateResult {
     // TODO: Should not happen as a part of the render loop.
     this.dispatchTitleChangeEvent();
-
     return html`
       <paint-menu-bar
         .entries="${menus}"
@@ -233,6 +232,7 @@ export class App extends LitElement {
             </paint-tool-bar>`
           : ''}
         <paint-canvas .drawingContext="${this.drawingContext}"></paint-canvas>
+        <paint-layer name="mike" style="width: 15em !important;"></paint-layer>
       </div>
       ${this.drawingContext.view.colorBox
         ? html` <paint-tool-bar class="color-box">
