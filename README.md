@@ -1,3 +1,8 @@
+# This is a forked version of the below.  I'm forking it to add:
+
+* Layers
+* Integration with [remoteStorage.js](https://github.com/remotestorage/remotestorage.js/)
+
 # Paint: An open-source, Web Components-based remake of MS Paint using modern web capabilities
 
 ![Node.js CI](https://github.com/christianliebel/paint/workflows/Node.js%20CI/badge.svg)
