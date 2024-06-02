@@ -232,7 +232,7 @@ export class App extends LitElement {
             </paint-tool-bar>`
           : ''}
         <paint-canvas .drawingContext="${this.drawingContext}"></paint-canvas>
-        <paint-layer name="mike" style="width: 15em !important;"></paint-layer>
+        <paint-layer-section .drawingContext="${this.drawingContext}" style="width: 15em !important;"></paint-layer-section>
       </div>
       ${this.drawingContext.view.colorBox
         ? html` <paint-tool-bar class="color-box">

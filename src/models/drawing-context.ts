@@ -1,4 +1,5 @@
 import type { History } from '../helpers/history';
+import type { Layer } from './layer';
 import type { Brush } from './brush';
 import type { FillStyle } from './fill-style';
 import type { Selection } from './selection';
@@ -9,6 +10,14 @@ import type { ToolDefinition } from './tool-definition';
  * The drawing context is the central state of the application.
  */
 export interface DrawingContext {
+  /**
+   * ID (should be layers map key) of what the user has access to
+   */
+  activeLayerID: string | null;
+  /**
+   * Layers
+   */
+  layers: Map<string, Layer>;
   /**
    * Contains the line width used by the Line, Curve, Rectangle, Polygon,
    * Ellipse, and Rounded Rectangle tools.

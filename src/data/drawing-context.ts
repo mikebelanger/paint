@@ -1,9 +1,15 @@
 import type { DrawingContext } from '../models/drawing-context';
+import type { Layer } from '../models/layer';
 import { PENCIL } from '../tools/all';
 import { DEFAULT_COLORS, DEFAULT_PALETTE } from './colors';
 
+const DEFAULT_LAYERS: Map<string, Layer> = new Map();
+DEFAULT_LAYERS.set('layer_1231241', {canvas: document.createElement('canvas'), disabled: false, name: 'First layer'});
+
 export const DRAWING_CONTEXT: DrawingContext = {
   lineWidth: 1,
+  activeLayerID: null,
+  layers: DEFAULT_LAYERS,
   colors: { ...DEFAULT_COLORS },
   palette: [...DEFAULT_PALETTE],
   previewColor: null,

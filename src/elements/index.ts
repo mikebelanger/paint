@@ -30,3 +30,4 @@ import './tool-eraser-size';
 import './tool-fill-style';
 import './tool-line-width';
 import './paint-layer';
+import './paint-layer-toolbox';
